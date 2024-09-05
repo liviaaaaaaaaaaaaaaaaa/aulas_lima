@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="'viewport" content="width=device-widht, initial-scale=1.0".>
+    <title>Pagina Principal</title>
+
+<style>
+    /* Seletor universal */
+    *{
+        margin: 0;
+    }
+    /* Seletor do tipo, aplicando em uma tag */
+    p{
+        color: brown;
+    }
+    /* Seletor de classe */
+    
+    .paragrafo{
+        background-color: cadetblue;
+        
+
+        /*margin: 10px 40px; - Aplica em todas as margens*/
+        /* margin: 10px 40px; - Aplica nas margens 'Latersais' e 'superior e inferior' */
+        /*margin: 10px 20px 30px 40px;/*aplica margem top, right, bottom, left*/
+        margin-left: 10px;
+        text-align: center;
+        
+    
+
+    }
+    .imagem {
+        width: 150px;
+        height: 1000px;
+
+    }
+
+
+
+    </style>
+</head>
+
+
+<!--aplicando css inline cor de fundo-->
+<body style="background-color: rgb(14, 203, 203);">
+     Olá Mundo!
+     <!--Titulos de nivel 1 ao 6-->
+    <h1>Desinvolvimento de sistema</h1>
+    <h2>Cabeçalho de nivel2</h2>
+    <h3>Cabeçalho de nivel3</h3>
+    <h4>Cabeçalho de nivel4</h4>
+    <h5>Cabeçalho de nivel5</h5>
+    <h6>Cabeçalho de nivel6</h6>
+
+    <!-- Insere uma linha na horizontal -->
+     <hr>
+     <!--A tag 'p' insere um novo parágrafro -->
+     <p>Este é um parágrafo</p>
+     <p>Este é um parágrafo <p>   <p>Outro parágrafo</p></p>
+     <hr>
+
+      <!--A tag br quebra uma linha uma linha, ela é uma tag sem fechamento-->  
+     <p class="paragrafo">Este é um texto muito grande,<br>
+        que eu desejo<br> quebrar a linha</p>
+
+        <!--Inserindo um link para abrir uma página!-->
+        <a href="https://www.sesisp.org.br">Pagina do sesi</a>
+
+        <!--Link com atributo _blank para abrir em outra janela-->
+        <a href="https://www.sp.senai.br/" target="_blank">Senai</a>
+
+        <!-- Aplicando link em uma imagem -->
+         <a href="https://www.sesisp.org.br" target="_blank"><img src="./img/Logo_SESI_vermelho.jpg" alt=""></a>
+
+         <p style="font-size: xx-large;">Videos do youtube </p>
+         <iframe width="600" height="490" src="https://www.youtube.com/embed/wVvNlw3XSYE" title="MC Kevin - Lágrima de Crocodilo (DJ Glenner)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+         
+
+<p>
+        <img class="imagem" src="./img/bob esponja.gif" alt="">
+<p>
+
+<hr>
+  <!--Listas-->
+  <!-- Listas Ordenadas-->
+   <ol>
+    <li>Acordar</li>
+    <li>Tomar banho</li>
+    <li>Colocar roupa</li>
+    <li>Tomar café</li>
+    <li>Escovar os dentes</li>
+    <li>Ir para escola no horario</li>
+   </ol><br>
+   
+   <!--Lista ordenadas com numero romano minusculo-->
+   <ol type="i"> 
+    <li>Acordar</li>
+    <li>Tomar banho</li>
+    <li>Colocar roupa</li>
+    <li>Tomar café</li>
+    <li>Escovar os dentes</li>
+    <li>Ir para escola no horario</li>
+
+   </ol> <br>
+   <!--Lista ordenadas com numero romano maiusculo-->
+   <ol type="A"> 
+    <li>Acordar</li>
+    <li>Tomar banho</li>
+    <li>Colocar roupa</li>
+    <li>Tomar café</li>
+    <li>Escovar os dentes</li>
+    <li>Ir para escola no horario</li>
+
+   </ol> <br>
+
+   <!--Lista não ordenadas-->
+   <ul>
+      <li>Carvão</li>
+      <li>Carne</li>
+      <li>Bebidas</li>
+      <li>Arroz</li>
+
+   </ul>
+
+   <!--Lista não ordenadas-->
+   <ul>
+    <li>Carne
+        <ul>
+            <li>Picanha</li>
+            <li>Cupim</li>
+            <li>Ponta de peito</li>
+        <ul>
+
+    </li>
+    <li>Carne</li>
+    <li>Bebidas</li>
+    <li>Arroz</li>
+
+ </ul>
+   <!--Lista predefinida-->
+   <dl>
+      <dt>HTML</dt>
+      <dd>Linguagem de marcação para conteúdo de um site</dd>
+      <dt>CSS</dt>
+      <dd>Linguagem de estilização do Site</dd>
+      <dt>Javascript</dt>
+      <dd>Linguagem de programação</dd>
+
+   </dl>
+
+   
+
+
+
+
+</body>
+</html>
