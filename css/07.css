@@ -1,0 +1,12 @@
+.imagem{
+    width: 90px;
+    height: 90px;
+}
+.cabecalho{
+    background-color: black;
+    color: aliceblue;
+}
+.celula{
+    background-color: brown;
+    color: rgb(255, 255, 255);
+}
