@@ -1,0 +1,25 @@
+.div1{
+    background-color: blueviolet;
+}
+.div2{
+    background-color: rgb(89, 255, 29);
+}
+.div3{
+    background-color: rgb(63, 118, 228);
+}
+
+.container{
+    border: 2px solid black;
+    /*Limita o tamanho do elemento*/
+    max-width: 400px;
+    margin: 0 auto;
+    /*define o tamanho do elemento e o espaço entre eles*/
+    display: flex;
+}
+
+.item{
+    background-color: blue;
+    margin: 5px;
+    text-align: center;
+    color: beige;
+}

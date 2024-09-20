@@ -1,0 +1,27 @@
+.cabecalho{
+    padding: 40px;
+    color: rgb(0, 48, 90);
+}
+
+.formulario{
+    padding: 50px;
+    margin: 0 auto;
+}
+
+body{
+    background-color: rgb(104, 59, 147);
+}
+.cadastro{
+    height: 30px;
+    width: 300px;
+}
+.botao{
+    color: black ;
+    padding: 100px;
+    margin-top: 30px;
+    background-color: chocolate;
+}
+
+body{
+    background-color: rgb(226, 245, 23);
+}
