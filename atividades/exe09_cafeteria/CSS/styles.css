@@ -6,8 +6,97 @@
     /*Assegura que padding e margin sejam incluindo nas dimensoes totais do elemento*/
     box-sizing: border-box;
 }
+body{
+    color: #e9e4e4;
+    background-color: black;
+}
 
-.logo{
-    font-family: Teko;
+header{
+    background-color: black;
+    align-items: center;
+    
+}
+
+.logo1{
+    font-family: teko;
     font-size: 2rem;
+    color: #e9e4e4;
+}
+
+.nav{
+    max-width: 1120px;
+    width: 100%;
+    
+    margin:auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.texto{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.alinhar_itens{
+    display: flex;
+    flex-direction: row;
+    height: 120px;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    justify-content: center;
+    gap: 60px;
+    text-align: center;
+    color: rgb(246, 250, 253);
+    margin: auto;
+
+}
+
+.banner-cafe{
+    max-width: 100;
+   
+    margin: auto;
+}
+
+.banner-cafe > img{
+    width: 100%;
+    box-shadow: 10px 0px 20px rgb(0,0,0, 0.5);
+    border-radius: 2px;
+    opacity: 1;
+}
+
+.banner-novidades{
+    max-width: 1120px;
+    height: 60vh;
+    margin: auto;
+    padding: 0rem 2rem;
+    gap: 6rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.banner-conteudo{
+    /*Organizamos o conteudo em coluna*/
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.banner-imagem{
+    /*DEfinir largura maxima*/
+    max-width: 45%;
+    /*Exibir as imagens em 4 colunas*/
+    column-count: 4;
+}
+
+.banner-imagem > figure > img{
+    width: 100%;
+    border-radius: 5px;
+
 }
