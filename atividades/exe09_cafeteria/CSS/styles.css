@@ -12,7 +12,7 @@ body{
 }
 
 header{
-    background-color: black;
+    background-color: rgb(0, 0, 0);
     align-items: center;
     
 }
@@ -55,7 +55,6 @@ header{
     text-align: center;
     color: rgb(246, 250, 253);
     margin: auto;
-
 }
 
 .banner-cafe{
@@ -89,7 +88,7 @@ header{
 }
 
 .banner-imagem{
-    /*DEfinir largura maxima*/
+    /*Definir largura maxima*/
     max-width: 45%;
     /*Exibir as imagens em 4 colunas*/
     column-count: 4;
@@ -98,5 +97,148 @@ header{
 .banner-imagem > figure > img{
     width: 100%;
     border-radius: 5px;
+}
 
+/*criando scrool para cards*/
+.card-novo{
+    display: flex;
+
+    overflow: scroll;
+    gap: 3rem;
+    max-width: 1120px;
+    margin: auto;
+}
+
+/*removendo a barra de scrool*/
+.card-novo::-webkit-scrollbar{
+    display: none;
+}
+
+.receitas{
+    /*organizando em colunas*/
+    display: flex;
+    flex-direction: column;
+    max-width: 1120px;
+    padding: 2.5rem 2rem;
+    margin: auto;
+    text-align: start;
+}
+
+.cabecalho-card{
+    background-color: rgba(99, 78, 61, 0.416);
+    padding: 2px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card{
+    margin-left: 40px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 10px;
+    box-shadow: 5px 0px 20px rgba(255, 255, 255, 0.7);
+    max-width: 260px;
+}
+
+.rodape-card{
+    background-color: #534743;
+    padding: 3px;
+    border-bottom-right-radius: 10px;
+    display: flex;
+    flex-direction:  column;
+    justify-content: flex-start;
+}
+
+button{
+    width: 80px;
+    background-color: #A45A49;
+    color: #caa100;
+    border-radius: 8px;
+    padding: 4px;
+}
+
+/*mapa*/
+.mapa{
+    max-width: 1120px;
+    width: 600px;
+    height: 400px;
+
+    /*Aplica papel de parede a nossa div*/
+    background-image: url('../img/mapa.png');
+    background-repeat: no-repeat;
+    /*aplica tamanho de imagem em todo o espaço*/
+    background-size: cover;
+    margin: 20px auto;
+    position: relative;
+}
+
+.icone{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: #ff6347;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #e9e4e4;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.icone1{
+    top: 20px;
+    left: 100px;
+}
+
+.icone2{
+    top: 100px;
+    left: 220px;
+}
+
+/*criando um elemento que nao ira aparecer na tela*/
+.div-hover{
+    /*escondendo a imagem*/
+    display: none;
+    position: 100%;
+    left: 50%;
+    width: 500px;
+    height: 400px;
+}
+
+.icone:hover .div-hover{
+    /*mostrando a imagem*/
+    display: block;
+    position: fixed;
+    top: 15%;
+    left: 37%;
+}
+
+/*EStlizando melhores avaliados*/
+
+.container-galeria{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 20px;
+    background-color: #ccc;
+}
+
+.item-galeria{
+    width: 300px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 8px;
+    background-color: aquamarine;
+}
+
+.item-galeria img{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    transform: transform 0.3s ease, opacity 0.3 ease;
+}
+
+.item-galeria img:hover{
+    transform: scale(1.1);
 }
