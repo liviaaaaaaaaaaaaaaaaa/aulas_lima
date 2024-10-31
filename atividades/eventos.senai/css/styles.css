@@ -1,0 +1,88 @@
+.banner-container{
+    position: relative;
+}
+
+.banner > img{
+    width: 100%;
+    height: auto;
+    object-fit: fill;
+    max-height: 650px;
+    opacity: 0.7;
+}
+
+.banner-text{
+    position: absolute;
+    top: 40%;
+    color: white;
+    width: 100%;
+}
+
+.card{
+    flex: 1 !important;
+    min-height: 250px !important;
+    max-width: 300px !important;
+}
+
+.car > img{
+    width: 100%;
+    height: 300%;
+    object-fit: cover;
+}
+
+/*Estilizando formulario*/
+.form-group{
+    /*Cada campo ocupara metade de linha*/
+    flex: 1 1 calc(50% - 20);
+}
+
+.form-container{
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: space-between !important;
+    gap: 20px ;
+}
+
+/*Ajustes de responsividade*/
+
+/*XL - EXTRA GRANDE*/
+@media (max-widht: 1200px)
+{
+
+}
+
+/* LG -GRANDE*/
+@media (max-widht: 1199px)
+{
+
+}
+
+/*MD - MEDIO*/
+@media (max-widht: 9991px)
+{
+
+}
+
+/*ISM- Pequeno*/
+@media (max-widht: 768px){
+.banner-text h1{
+    font-size: 2.0rem;
+}
+.card > img{
+    height: 150px;
+}
+
+}
+
+/* XS - Extra Pequeno*/
+@media (max-widht: 576px){
+    .banner-text h1{
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-widht: 576px){
+    .banner-text a{
+        width:  70px ;
+        font-size: 0.6rem;
+    }
+}
